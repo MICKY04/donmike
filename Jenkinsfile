@@ -64,7 +64,7 @@ pipeline {
             sh """mvn sonar:sonar \
                       -Dsonar.projectKey=maven \
                       -Dsonar.host.url=http://54.241.66.165:9000 \
-                      -Dsonar.login=static"""
+                      -Dsonar.login=04416be6093114466ea13d212d337ac84161f93a"""
           }
         }
 
