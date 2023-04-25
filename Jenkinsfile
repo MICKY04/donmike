@@ -108,7 +108,7 @@ pipeline {
         HOSTS = "prod"
       }
       steps {
-        sh "ansibleplaybook ${WORKSPACE}/deploy.yaml --extra-vars \"hosts=$HOSTS workspace_path=$WORKSPACE\""
+        sh "ansible-playbook ${WORKSPACE}/deploy.yaml --extra-vars \"hosts=$HOSTS workspace_path=$WORKSPACE\""
       }
     }
   }
